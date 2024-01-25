@@ -19,11 +19,11 @@ The project is organized as follows:
 
 ## Coordinator
 
-The project utilizes the Coordinator design pattern to manage the application flow and enhance modularity. For more information about the Coordinator, you can check the [Wiki](wiki) page.
+The project utilizes the Coordinator design pattern to manage the application flow and enhance modularity.
 
 ## Builder
 
-The Builder pattern is used in the project to create objects step by step and manage the construction of complex objects. More details about the Builder pattern can be found [here](wiki).
+The Builder pattern is used in the project to create objects step by step and manage the construction of complex objects. 
 
 ## Versions
 
@@ -33,4 +33,4 @@ The Builder pattern is used in the project to create objects step by step and ma
 
 ---
 
-This project serves as a starting point for developers interested in learning and implementing the Viper architecture. For more information about the project and how to get started, please refer to the [Wiki](wiki) page.
+This project serves as a starting point for developers interested in learning and implementing the Viper architecture. 
