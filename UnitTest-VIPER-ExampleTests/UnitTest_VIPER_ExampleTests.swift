@@ -9,28 +9,47 @@ import XCTest
 @testable import UnitTest_VIPER_Example
 
 final class UnitTest_VIPER_ExampleTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    private var presenter: NewsListPresenter!
+    private var interactor: NewsListInteractor!
+    private var mockService: MockNewsListService!
+    private var view: MockNewsListView!
+    
+    override func setUp() {
+        mockService = MockNewsListService()
+        interactor = NewsListInteractor(service: mockService)
+        view = MockNewsListView()
+        presenter = NewsListPresenter(interactor: interactor,
+                                      view: view)
+        view.presenter = presenter
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testFetchNews() throws {
+        //Given
+        let news = try ResourceLoader.loadNews(resource: .news)
+        
+        //When
+        view.fetchNews()
+        view.presenter = presenter
+        
+        //Then
+        XCTAssertEqual(view.outputs.count, 3)
+        XCTAssertEqual(view.outputs[0], .showLoading(isLoading: true))
+        XCTAssertEqual(view.outputs[1], .showLoading(isLoading: false))
+        XCTAssertEqual(view.outputs[2], .newsList(news: news))
     }
+}
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+private class MockNewsListView: NewsListProtocolDelegate {
+    
+    var presenter: NewsListPresenter!
+    var outputs: [NewsListPresenter.UserInteraction] = []
+    
+    func fetchNews() {
+        presenter.fetchNews()
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func handleOutput(output: UnitTest_VIPER_Example.NewsListPresenter.UserInteraction) {
+        outputs.append(output)
     }
-
 }

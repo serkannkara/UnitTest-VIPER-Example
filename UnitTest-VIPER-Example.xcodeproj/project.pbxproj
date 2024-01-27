@@ -8,14 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		DB2E7C6A2B61151E00759584 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7C692B61151E00759584 /* AppDelegate.swift */; };
-		DB2E7C6C2B61151E00759584 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7C6B2B61151E00759584 /* SceneDelegate.swift */; };
-		DB2E7C6E2B61151E00759584 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7C6D2B61151E00759584 /* ViewController.swift */; };
-		DB2E7C712B61151E00759584 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2E7C6F2B61151E00759584 /* Main.storyboard */; };
 		DB2E7C732B61152000759584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2E7C722B61152000759584 /* Assets.xcassets */; };
 		DB2E7C762B61152000759584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2E7C742B61152000759584 /* LaunchScreen.storyboard */; };
 		DB2E7C812B61152000759584 /* UnitTest_VIPER_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7C802B61152000759584 /* UnitTest_VIPER_ExampleTests.swift */; };
 		DB2E7C8B2B61152000759584 /* UnitTest_VIPER_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7C8A2B61152000759584 /* UnitTest_VIPER_ExampleUITests.swift */; };
 		DB2E7C8D2B61152000759584 /* UnitTest_VIPER_ExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7C8C2B61152000759584 /* UnitTest_VIPER_ExampleUITestsLaunchTests.swift */; };
+		DB2E7C9E2B61169C00759584 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7C9D2B61169C00759584 /* AppCoordinator.swift */; };
+		DB2E7CA12B61171C00759584 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7CA02B61171C00759584 /* NetworkLayer.swift */; };
+		DB2E7CA42B61173900759584 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7CA32B61173900759584 /* News.swift */; };
+		DB2E7CA92B6117D600759584 /* NewsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7CA72B6117D600759584 /* NewsListVC.swift */; };
+		DB2E7CAA2B6117D600759584 /* NewsListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2E7CA82B6117D600759584 /* NewsListVC.xib */; };
+		DB2E7CAC2B6118FD00759584 /* NewsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7CAB2B6118FD00759584 /* NewsListPresenter.swift */; };
+		DB2E7CAE2B61190600759584 /* NewsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7CAD2B61190600759584 /* NewsListInteractor.swift */; };
+		DB2E7CB52B61196200759584 /* NewsListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7CB42B61196200759584 /* NewsListBuilder.swift */; };
+		DB2E7CBA2B6125B000759584 /* APISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7CB92B6125B000759584 /* APISettings.swift */; };
+		DB2E7CBC2B6125B900759584 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7CBB2B6125B900759584 /* BaseViewController.swift */; };
+		DB2E7CBF2B61396400759584 /* MockNewsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7CBE2B61396400759584 /* MockNewsListService.swift */; };
+		DB2E7CC12B61399700759584 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E7CC02B61399700759584 /* ResourceLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +47,6 @@
 /* Begin PBXFileReference section */
 		DB2E7C662B61151E00759584 /* UnitTest-VIPER-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UnitTest-VIPER-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2E7C692B61151E00759584 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB2E7C6B2B61151E00759584 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB2E7C6D2B61151E00759584 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB2E7C702B61151E00759584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB2E7C722B61152000759584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2E7C752B61152000759584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB2E7C772B61152000759584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +55,18 @@
 		DB2E7C862B61152000759584 /* UnitTest-VIPER-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UnitTest-VIPER-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2E7C8A2B61152000759584 /* UnitTest_VIPER_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_VIPER_ExampleUITests.swift; sourceTree = "<group>"; };
 		DB2E7C8C2B61152000759584 /* UnitTest_VIPER_ExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_VIPER_ExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB2E7C9D2B61169C00759584 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DB2E7CA02B61171C00759584 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		DB2E7CA32B61173900759584 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		DB2E7CA72B6117D600759584 /* NewsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListVC.swift; sourceTree = "<group>"; };
+		DB2E7CA82B6117D600759584 /* NewsListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListVC.xib; sourceTree = "<group>"; };
+		DB2E7CAB2B6118FD00759584 /* NewsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListPresenter.swift; sourceTree = "<group>"; };
+		DB2E7CAD2B61190600759584 /* NewsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListInteractor.swift; sourceTree = "<group>"; };
+		DB2E7CB42B61196200759584 /* NewsListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListBuilder.swift; sourceTree = "<group>"; };
+		DB2E7CB92B6125B000759584 /* APISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISettings.swift; sourceTree = "<group>"; };
+		DB2E7CBB2B6125B900759584 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DB2E7CBE2B61396400759584 /* MockNewsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsListService.swift; sourceTree = "<group>"; };
+		DB2E7CC02B61399700759584 /* ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +117,15 @@
 		DB2E7C682B61151E00759584 /* UnitTest-VIPER-Example */ = {
 			isa = PBXGroup;
 			children = (
-				DB2E7C692B61151E00759584 /* AppDelegate.swift */,
-				DB2E7C6B2B61151E00759584 /* SceneDelegate.swift */,
-				DB2E7C6D2B61151E00759584 /* ViewController.swift */,
-				DB2E7C6F2B61151E00759584 /* Main.storyboard */,
+				DB2E7CB32B61195800759584 /* Builder */,
+				DB2E7CA52B61176000759584 /* Common */,
+				DB2E7CA22B61173300759584 /* Model */,
+				DB2E7C992B61152800759584 /* Screens */,
+				DB2E7C9F2B6116D000759584 /* Manager */,
+				DB2E7C9B2B6115EA00759584 /* Utilities */,
+				DB2E7C9C2B6115F300759584 /* Coordinator */,
+				DB2E7C9A2B61154E00759584 /* Application */,
 				DB2E7C722B61152000759584 /* Assets.xcassets */,
-				DB2E7C742B61152000759584 /* LaunchScreen.storyboard */,
 				DB2E7C772B61152000759584 /* Info.plist */,
 			);
 			path = "UnitTest-VIPER-Example";
@@ -125,6 +146,108 @@
 				DB2E7C8C2B61152000759584 /* UnitTest_VIPER_ExampleUITestsLaunchTests.swift */,
 			);
 			path = "UnitTest-VIPER-ExampleUITests";
+			sourceTree = "<group>";
+		};
+		DB2E7C992B61152800759584 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7CBD2B612D2700759584 /* NewsList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DB2E7C9A2B61154E00759584 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7C692B61151E00759584 /* AppDelegate.swift */,
+				DB2E7C742B61152000759584 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DB2E7C9B2B6115EA00759584 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7CB82B61256F00759584 /* Base */,
+				DB2E7CB72B61256900759584 /* APISettings */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DB2E7C9C2B6115F300759584 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7C9D2B61169C00759584 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DB2E7C9F2B6116D000759584 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7CA02B61171C00759584 /* NetworkLayer.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DB2E7CA22B61173300759584 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7CA32B61173900759584 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB2E7CA52B61176000759584 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7CA62B61177D00759584 /* TestCase */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DB2E7CA62B61177D00759584 /* TestCase */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7CBE2B61396400759584 /* MockNewsListService.swift */,
+				DB2E7CC02B61399700759584 /* ResourceLoader.swift */,
+			);
+			path = TestCase;
+			sourceTree = "<group>";
+		};
+		DB2E7CB32B61195800759584 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7CB42B61196200759584 /* NewsListBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		DB2E7CB72B61256900759584 /* APISettings */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7CB92B6125B000759584 /* APISettings.swift */,
+			);
+			path = APISettings;
+			sourceTree = "<group>";
+		};
+		DB2E7CB82B61256F00759584 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7CBB2B6125B900759584 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DB2E7CBD2B612D2700759584 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E7CA82B6117D600759584 /* NewsListVC.xib */,
+				DB2E7CA72B6117D600759584 /* NewsListVC.swift */,
+				DB2E7CAB2B6118FD00759584 /* NewsListPresenter.swift */,
+				DB2E7CAD2B61190600759584 /* NewsListInteractor.swift */,
+			);
+			path = NewsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +354,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB2E7CAA2B6117D600759584 /* NewsListVC.xib in Resources */,
 				DB2E7C762B61152000759584 /* LaunchScreen.storyboard in Resources */,
 				DB2E7C732B61152000759584 /* Assets.xcassets in Resources */,
-				DB2E7C712B61151E00759584 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +381,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB2E7C6E2B61151E00759584 /* ViewController.swift in Sources */,
+				DB2E7CA12B61171C00759584 /* NetworkLayer.swift in Sources */,
+				DB2E7CBF2B61396400759584 /* MockNewsListService.swift in Sources */,
+				DB2E7CC12B61399700759584 /* ResourceLoader.swift in Sources */,
+				DB2E7CA92B6117D600759584 /* NewsListVC.swift in Sources */,
+				DB2E7CBA2B6125B000759584 /* APISettings.swift in Sources */,
+				DB2E7CBC2B6125B900759584 /* BaseViewController.swift in Sources */,
+				DB2E7CAE2B61190600759584 /* NewsListInteractor.swift in Sources */,
+				DB2E7C9E2B61169C00759584 /* AppCoordinator.swift in Sources */,
+				DB2E7CA42B61173900759584 /* News.swift in Sources */,
 				DB2E7C6A2B61151E00759584 /* AppDelegate.swift in Sources */,
-				DB2E7C6C2B61151E00759584 /* SceneDelegate.swift in Sources */,
+				DB2E7CB52B61196200759584 /* NewsListBuilder.swift in Sources */,
+				DB2E7CAC2B6118FD00759584 /* NewsListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +429,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DB2E7C6F2B61151E00759584 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB2E7C702B61151E00759584 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB2E7C742B61152000759584 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +566,6 @@
 				INFOPLIST_FILE = "UnitTest-VIPER-Example/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +593,6 @@
 				INFOPLIST_FILE = "UnitTest-VIPER-Example/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
